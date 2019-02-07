@@ -16,8 +16,9 @@ function lightActive(){
 }
 
 function redLight(){
-  $(".redLight").on('click', function(){
+  $(".redLight").on('click', function(event){
     $(this).toggleClass("red");
+    stopProgatation();
   });
 }
 
