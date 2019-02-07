@@ -24,13 +24,15 @@ function redLight(){
 
 
 function yellowLight(){
-  $(".yellowLight").on('click', function(){
+  $(".yellowLight").on('click', function(event){
     $(this).toggleClass("yellow");
+    event.stopPropagation();
   });
 }
 
 function greenLight(){
-  $(".greenLight").on('click', function(){
+  $(".greenLight").on('click', function(event){
     $(this).toggleClass("green");
+    event.stopPropagation();
   });
 }
